@@ -10,7 +10,3 @@ This repository replicates [Test-Driven Development](https://www.ohmsha.co.jp/bo
 2. Run your image as a container
 
     `make run`
-
-
-## Run Test
-`python3 -m unittest discover test`
