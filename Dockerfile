@@ -9,9 +9,7 @@ ENV DEBIAN_FRONTEND noninteractive
 # Install libraries
 RUN apt-get update && \
     apt-get install -y python3.8 python3.8-venv python3-pip && \
-    apt-get install -y  git && \
-    git config --global user.email 'tokuma.suzuki09@gmail.com' && \
-    git config --global user.name 'Tokuma Suzuki'
+    apt-get install -y  git
 # determine working directory
 WORKDIR /root/project
 
