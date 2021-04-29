@@ -1,5 +1,7 @@
 # PyTDD
 
+[![test](https://github.com/tokuma09/PyTDD/actions/workflows/main.yml/badge.svg)](https://github.com/tokuma09/PyTDD/actions/workflows/main.yml)
+
 This repository replicates [Test-Driven Development](https://www.ohmsha.co.jp/book/9784274217883/) by Python.
 
 ## Docker Environment
