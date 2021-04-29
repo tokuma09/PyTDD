@@ -6,7 +6,11 @@ This repository replicates [Test-Driven Development](https://www.ohmsha.co.jp/bo
 
 1. Build image
 
-    `make build`
+    `docker compose up -d`
 2. Run your image as a container
 
-    `make run`
+    `docker compose python bash`
+
+3. Remove your container
+
+    `docker compose down`
