@@ -20,6 +20,6 @@ jobs:
     - name: Build image
       run : docker build -t project:latest .
     - name: Run image
-      run : docker run -t -v ${PWD}:/root/project project:latest
+      run : docker run -i -v ${PWD}:/root/project project:latest
     - name: Test
       run: python3 -m unittest
