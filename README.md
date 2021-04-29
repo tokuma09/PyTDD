@@ -9,7 +9,7 @@ This repository replicates [Test-Driven Development](https://www.ohmsha.co.jp/bo
     `docker compose up -d`
 2. Run your image as a container
 
-    `docker compose python bash`
+    `docker compose exec python bash`
 
 3. Remove your container
 
