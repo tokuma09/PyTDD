@@ -4,3 +4,6 @@ class Dollar():
 
     def times(self, multiplier):
         return Dollar(self.amount * multiplier)
+
+    def equals(self, dollar):
+        return self.amount == dollar.amount
