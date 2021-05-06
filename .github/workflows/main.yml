@@ -21,4 +21,4 @@ jobs:
       - name: Run image
         run: docker run -i -v ${PWD}:/root/project project:latest
       - name: Test
-        run: python3 -m unittest discover test
+        run: python3 -m unittest discover tests
