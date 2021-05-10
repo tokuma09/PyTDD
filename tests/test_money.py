@@ -9,7 +9,7 @@ class TestMoney(unittest.TestCase):
 
         five = Dollar(5)
         self.assertEqual(Dollar(10), five.times(2), "should be 10")
-        self.assertEqual(Dollar(15), five.times(3), "should be 10")
+        self.assertEqual(Dollar(15), five.times(3), "should be 15")
 
     def test_equality(self):
         self.assertTrue(Dollar(5).equals(Dollar(5)))
