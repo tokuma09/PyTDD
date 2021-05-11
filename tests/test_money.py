@@ -24,7 +24,3 @@ class TestMoney(unittest.TestCase):
 
         self.assertEqual(Franc(10), five.times(2), "should be 10")
         self.assertEqual(Franc(15), five.times(3), "should be 15")
-
-
-if __name__ == '__main__':
-    unittest.main()
