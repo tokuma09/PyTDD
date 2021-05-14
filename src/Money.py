@@ -6,6 +6,9 @@ class Money():
         self._amount = amount
         self._currency = currency
 
+    def plus(self, addend):
+        return Money(self.amount + addend.amount, self.currency)
+
     @abstractmethod
     def times(self, multiplier):
         return Money(self.amount * multiplier, self.currency)
