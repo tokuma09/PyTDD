@@ -12,15 +12,13 @@ class Money():
 
     @staticmethod
     def dollar(amount):
-        from src.Dollar import Dollar
 
-        return Dollar(amount, 'USD')
+        return Money(amount, 'USD')
 
     @staticmethod
     def franc(amount):
-        from src.Franc import Franc
 
-        return Franc(amount, 'CHF')
+        return Money(amount, 'CHF')
 
     @property
     def currency(self):
