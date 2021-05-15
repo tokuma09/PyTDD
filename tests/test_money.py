@@ -1,11 +1,21 @@
 import unittest
 
 from src.Money import Money
+from src.Bank import Bank
 
 
 class TestMoney(unittest.TestCase):
     """test class
     """
+    def test_simple_addition(self):
+
+        five = Money.dollar(5)
+        sum = five.plus(five)
+
+        bank = Bank()
+        reduced = bank.reduce(sum, 'USD')
+        self.assertEqual(Money.dollar(10), reduced)
+
     def test_multiplication(self):
 
         five = Money.dollar(5)
