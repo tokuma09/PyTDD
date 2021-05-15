@@ -1,6 +1,3 @@
-from abc import abstractmethod
-
-
 class Money():
     def __init__(self, amount, currency):
         self._amount = amount
@@ -9,18 +6,14 @@ class Money():
     def plus(self, addend):
         return Money(self.amount + addend.amount, self.currency)
 
-    @abstractmethod
     def times(self, multiplier):
         return Money(self.amount * multiplier, self.currency)
 
-    @staticmethod
     def dollar(amount):
-
         return Money(amount, 'USD')
 
     @staticmethod
     def franc(amount):
-
         return Money(amount, 'CHF')
 
     @property
