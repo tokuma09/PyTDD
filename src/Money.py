@@ -24,8 +24,10 @@ class Money():
     def __repr__(self):
         return str(self.amount) + " " + self.currency
 
-    def dollar(self, amount):
+    @staticmethod
+    def dollar(cls, amount):
         return Money(amount, 'USD')
 
-    def franc(self, amount):
+    @staticmethod
+    def franc(amount):
         return Money(amount, 'CHF')
