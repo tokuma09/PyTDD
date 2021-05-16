@@ -9,11 +9,10 @@ class Money():
     def times(self, multiplier):
         return Money(self.amount * multiplier, self.currency)
 
-    def dollar(amount):
+    def dollar(self, amount):
         return Money(amount, 'USD')
 
-    @staticmethod
-    def franc(amount):
+    def franc(self, amount):
         return Money(amount, 'CHF')
 
     @property
