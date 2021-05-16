@@ -25,7 +25,7 @@ class Money():
         return str(self.amount) + " " + self.currency
 
     @staticmethod
-    def dollar(cls, amount):
+    def dollar(amount):
         return Money(amount, 'USD')
 
     @staticmethod
