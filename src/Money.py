@@ -11,8 +11,12 @@ class Money():
     def amount(self):
         return self._amount
 
+    def reduce(self, to):
+        return self
+
     def plus(self, addend):
-        return Money(self.amount + addend.amount, self.currency)
+        from src.Sum import Sum
+        return Sum(self, addend=addend)
 
     def times(self, multiplier):
         return Money(self.amount * multiplier, self.currency)
