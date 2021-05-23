@@ -11,6 +11,9 @@ class Money():
     def amount(self):
         return self._amount
 
+    def reduce(self, to):
+        return self
+
     def plus(self, addend):
         from src.Sum import Sum
         return Sum(self, addend=addend)
